@@ -5,6 +5,7 @@ from main.views import delete_mood
 from main.views import login_user
 from main.views import logout_user
 from main.views import register
+from main.views import add_mood_entry_ajax
 
 app_name = 'main'
 
@@ -20,4 +21,5 @@ urlpatterns = [
     path('login/', login_user, name='login'),
     path('logout/', logout_user, name='logout'),
     path('register/', register, name='register'),
+    path('create-mood-entry-ajax', add_mood_entry_ajax, name='add_mood_entry_ajax'),
 ]
