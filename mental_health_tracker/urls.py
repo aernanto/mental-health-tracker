@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import path, include
-from main.views import registerzzz
+from main.views import register
 from main.views import logout_user, add_mood_entry_ajax
 
 urlpatterns = [
